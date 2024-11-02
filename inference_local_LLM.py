@@ -1,1 +1,0 @@
-# use local LLM model of LM studio to do inference

@@ -17,6 +17,6 @@ def read_recam(path, show_num=5):
 if __name__ == '__main__':
     task1_dev_path = "/Users/jiachenjiang/Documents/GitHub/semeval_2021_task4_LLM/data/training_data/Task_1_dev.jsonl"
     task2_dev_path = "/Users/jiachenjiang/Documents/GitHub/semeval_2021_task4_LLM/data/training_data/Task_2_dev.jsonl"
-    
+
     task1_dev_set = read_recam(task1_dev_path)
     task2_dev_set = read_recam(task2_dev_path)
