@@ -1,4 +1,4 @@
-# semeval_2021_task4_LLM
+# Semeval_2021_Task4_LLM
 
 Understanding abstract meanings is crucial for advanced language comprehension. Despite extensive research, abstract words remain challenging due to their non-concrete, high-level semantics. SemEval-2021 Task 4 (ReCAM) evaluates models’ ability to interpret abstract concepts by presenting passages with questions and five abstract options in a cloze-style format. Key findings include: (1) Most large language models (LLMs), including GPT-4o, struggle with abstract meaning comprehension under zero-shot, one-shot, and few-shot settings, while fine-tuned models like BERT and RoBERTa perform better. (2) A proposed bi-directional attention classifier, inspired by human cognitive strategies, enhances fine-tuned models by dynamically attending to passages and options. This approach improves accuracy by 4.06\% on Task 1 and 3.41\% on Task 2, demonstrating its potential for abstract meaning comprehension.
 
@@ -19,11 +19,10 @@ Download LM studio(https://lmstudio.ai/), load the model locally and open the se
 python inference_LLM.py --base_url http://localhost:1234/v1 \
                          --model_api_identifier gemma-2-9b-it \
                          --n_shots 2 \
-
 ```
 
 ### API Based LLM
-Apply and pay for the OpenAI API(https://platform.openai.com/docs/api-reference/introduction), export the OPEN API KEY to your environment variables, then run,
+Apply and pay for the OpenAI API(https://platform.openai.com/docs/api-reference/introduction), export the OPENAI_API_KEY to your environment variables, then run,
 
 ```
 python inference_LLM.py --base_url "" \
